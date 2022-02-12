@@ -6,23 +6,30 @@
     box-sizing: border-box;
 }
 .first-screen{
-    background-image: url(img/first-screen_bg.PNG);
+    background-image: url(../img/first_screen_bg.png);
     color: white;
-    width: 1920px;
-    height: 800px;
+    width: 100vw;
+    height: 100vh;
+    background-repeat:no-repeat;
+    background-size: cover;
 }
-.first-screen_bg{
-    z-index: -1;
+.blue_fignya{
+    height: 100vh;
+    width: 20vw;
     position: absolute;
-    width: 1920px;
-    height: 800px;
+    left: 25vw;
+    top: 0vh;
+    background-color: rgb(0, 91, 193, 60%);
+    z-index: 1;
 }
 .top_menu{
     background-color: rgb(0, 91, 193, 60%);
-    width: 100%;
+    width: 100vw;
     height: 80px;
     padding: 25px;
     display: flex;
+    position: relative;
+    z-index: 2;
 }
 .top_menu_logo{
     display: flex;
@@ -40,37 +47,41 @@
 .top_menu_logo_img{
     width: 50px;
     height: 50px;
+    margin-left: 2vh;
 }
 .top_menu_link_block{
-    margin-left:500px ;
+    margin-left:30vw ;
     text-align: center;
 }
 .top_menu_link{
     text-decoration: none;
     color: white;
     font-family:'Open Sans', sans-serif;
-    padding: 25px;
+    padding: 15px;
     font-size: 14px;
     font-weight: 600;
 }
 .first-screen_content{
-    width: 635px;
-    height: 317px;
-    margin-top:200px ;
-    margin-left:595px ;
+    position: relative;
+    z-index: 2;
+    width: 100vw;
+    height: 100vh;
+    margin-top:30vh ;
+    margin-left:30vw;    
+    padding-left: 80px;
 }
 .first-screen_content_headline{
     font-family:'Oswald', sans-serif;
     font-size: 48px;
     font-weight: 400;
-    padding-right:30px ;
+    width: 600px;
 }
 .first-screen_content_text{
     font-family:'Open Sans', sans-serif;
     font-size: 16px;
     font-weight: 400;
-    padding-right:200px;
     margin-top: 40px;
+    width: 500px;
 }
 .first-screen_content_btn{
     border: 2px solid white;
@@ -86,4 +97,34 @@
     font-weight: 600;
     text-decoration: none;
     color: white;
+}
+.slider{
+    margin-left: 20vw;
+    height: 50vh;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+}
+.slider_top{
+    display: flex;
+    justify-content: space-between;
+}
+.slider_top_left_block{
+    display: flex;
+}
+.slider_lines{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-end;
+}
+.first_line{
+    width: 100px;
+    margin-bottom: 10px;
+    height: 1px;
+}
+.second_line{
+  width: 50px;
+  height: 1px;  
 }
